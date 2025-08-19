@@ -75,4 +75,48 @@ Building a scalable application like the Airbnb Clone requires collaboration amo
 
 These roles collectively ensure that the Airbnb Clone Project is developed using industry best practices, focusing on scalability, performance, and security.
 
+## Technology Stack
+
+The Airbnb Clone Project leverages a modern technology stack to ensure scalability, reliability, and performance.  
+Each technology plays a unique role in the development and deployment process:
+
+### 1. Django
+
+- A high-level Python web framework used to build robust and scalable backend systems.  
+- Provides built-in features like authentication, ORM, and security tools.  
+- Facilitates rapid development of APIs and business logic.  
+
+### 2. MySQL
+
+- A relational database management system used to store, manage, and query structured data.  
+- Ideal for managing user accounts, bookings, payments, and property listings.  
+- Ensures data consistency, relationships, and optimized queries for high performance.  
+
+### 3. GraphQL
+
+- A query language and runtime for APIs that provides flexible data fetching.  
+- Allows clients to request exactly the data they need, reducing over-fetching or under-fetching.  
+- Enhances efficiency when integrating complex relationships between users, listings, and bookings.  
+
+### 4. Docker
+
+- A containerization platform that enables consistent application environments across development, testing, and production.  
+- Simplifies deployment by packaging code, dependencies, and configuration into portable containers.  
+- Ensures scalability and reliability in distributed environments.  
+
+### 5. GitHub & Git
+
+- **Git**: Version control system for tracking code changes and enabling team collaboration.  
+- **GitHub**: Cloud platform for managing repositories, reviewing code, and facilitating collaborative workflows.  
+- Supports branching, pull requests, and code reviews for smooth collaboration.  
+
+### 6. GitHub Actions (CI/CD)
+
+- Automates build, test, and deployment pipelines.  
+- Ensures continuous integration by testing new code before merging.  
+- Facilitates continuous delivery for faster and more reliable releases.  
+
+---
+
+This technology stack ensures the Airbnb Clone Project is built using modern, industry-standard tools, providing a strong foundation for scalability, security, and maintainability.
 

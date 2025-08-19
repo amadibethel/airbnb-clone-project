@@ -173,6 +173,51 @@ The schema is designed to handle users, listings, bookings, reviews, and payment
 
 ---
 
+## Feature Breakdown
+
+The Airbnb Clone Project includes several core features that mirror real-world booking platform functionality.  
+Each feature is designed to enhance the user experience while ensuring business logic and technical scalability.  
+
+### 1. User Management
+- Allows users to register, log in, and manage their profiles securely.  
+- Supports different roles (Guest, Host, Admin) with appropriate permissions and access control.  
+- Ensures secure authentication and authorization for all users.  
+
+### 2. Property Management
+- Enables hosts to list new properties with details such as title, description, location, and pricing.  
+- Provides functionality for editing, updating, and deleting property listings.  
+- Allows users to browse and search for properties by filters like location, price, and availability.  
+
+### 3. Booking System
+- Guests can book available properties by selecting check-in and check-out dates.  
+- Ensures validation of property availability to prevent double bookings.  
+- Provides booking management (view, cancel, confirm) for both guests and hosts.  
+
+### 4. Reviews & Ratings
+- Allows guests to leave feedback and ratings for properties they have stayed in.  
+- Helps build trust and credibility for hosts while guiding future guests in their decision-making.  
+- Supports moderation to prevent abuse and maintain quality standards.  
+
+### 5. Payments Integration
+- Facilitates secure payments for bookings using multiple payment methods (e.g., card, PayPal, bank transfer).  
+- Tracks payment status (Paid, Pending, Refunded) and links payments to specific bookings.  
+- Enhances trust and ensures smooth financial transactions between guests and hosts.  
+
+### 6. Security Features
+- Implements key measures like data encryption, password hashing, and secure API endpoints.  
+- Protects users from common vulnerabilities such as SQL injection, CSRF, and unauthorized access.  
+- Ensures compliance with best practices for secure transactions and data handling.  
+
+### 7. CI/CD & Deployment
+- Automates code testing, building, and deployment using GitHub Actions.  
+- Ensures continuous integration of new features while minimizing errors.  
+- Provides a scalable and reliable deployment pipeline with Docker containerization.  
+
+---
+
+These features collectively provide the foundation of a robust booking platform, ensuring scalability, usability, and trustworthiness for both hosts and guests.
+
+
 ### Relationships
 
 - A **User** can list multiple **Properties**.  

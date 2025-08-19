@@ -186,4 +186,59 @@ The schema is designed to handle users, listings, bookings, reviews, and payment
 
 This relational design ensures data consistency, integrity, and efficiency in handling core operations like reservations, payments, and reviews.
 
+## API Security
+
+Securing backend APIs is a critical component of the Airbnb Clone Project. Since the platform handles sensitive information such as user data, property details, bookings, and payments, strong security measures are required to prevent unauthorized access and data breaches.  
+
+### Key Security Measures
+
+#### 1. Authentication
+
+- Ensures that only registered users can access the system.  
+- Implemented using secure protocols such as JWT (JSON Web Tokens) or OAuth2.  
+- Protects user accounts by verifying identity before granting access.  
+
+#### 2. Authorization
+
+- Defines what actions different user roles (Guest, Host, Admin) can perform.  
+- Prevents users from accessing or modifying data they do not own.  
+- For example, a host can edit their property listing, but not someone else’s.  
+
+#### 3. Data Encryption
+
+- Uses HTTPS/TLS to secure data transmission between clients and servers.  
+- Encrypts sensitive information such as passwords and payment details before storage.  
+- Protects user data from eavesdropping and unauthorized access.  
+
+#### 4. Rate Limiting & Throttling
+
+- Limits the number of API requests from a single client within a given time.  
+- Prevents abuse such as denial-of-service (DoS) or brute-force login attempts.  
+- Ensures system stability under heavy traffic.  
+
+#### 5. Input Validation & Sanitization
+
+- Validates all user inputs before processing.  
+- Prevents common attacks like SQL injection, cross-site scripting (XSS), and malicious payloads.  
+- Ensures integrity of data stored in the database.  
+
+#### 6. Secure Payment Handling
+
+- Integrates with trusted payment gateways that follow PCI-DSS compliance.  
+- Ensures sensitive payment details are never stored in plain text.  
+- Protects users from fraud and ensures trust in financial transactions.  
+
+---
+
+### Why Security Is Crucial
+
+- **Protecting User Data**: Sensitive personal information must remain private and secure.  
+- **Securing Payments**: Financial transactions require strict compliance and encryption.  
+- **Maintaining Trust**: Strong security practices increase user confidence in the platform.  
+- **Preventing Fraud & Abuse**: Safeguards the system from malicious users and bots.  
+- **Ensuring Compliance**: Meets industry standards for data protection and privacy.  
+
+---
+
+By implementing these security measures, the Airbnb Clone Project ensures a safe, trustworthy, and reliable platform for all users.
 

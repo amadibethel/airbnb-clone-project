@@ -120,3 +120,70 @@ Each technology plays a unique role in the development and deployment process:
 
 This technology stack ensures the Airbnb Clone Project is built using modern, industry-standard tools, providing a strong foundation for scalability, security, and maintainability.
 
+## Database Design
+
+The Airbnb Clone Project uses a **relational database (MySQL)** to manage structured data.  
+The schema is designed to handle users, listings, bookings, reviews, and payments efficiently.  
+
+### Key Entities and Fields
+
+#### 1. Users
+
+- `id` (Primary Key)  
+- `name` (Full name of the user)  
+- `email` (Unique identifier for login)  
+- `password_hash` (Encrypted password for authentication)  
+- `role` (Guest, Host, or Admin)  
+
+#### 2. Properties
+
+- `id` (Primary Key)  
+- `user_id` (Foreign Key → Users)  
+- `title` (Property name/heading)  
+- `description` (Details about the property)  
+- `location` (City, country, or address)  
+- `price_per_night` (Cost for booking per night)  
+
+#### 3. Bookings
+
+- `id` (Primary Key)  
+- `user_id` (Foreign Key → Users)  
+- `property_id` (Foreign Key → Properties)  
+- `check_in_date`  
+- `check_out_date`  
+- `status` (Pending, Confirmed, Cancelled)  
+
+#### 4. Reviews
+
+- `id` (Primary Key)  
+- `user_id` (Foreign Key → Users)  
+- `property_id` (Foreign Key → Properties)  
+- `rating` (e.g., 1–5 stars)  
+- `comment` (Review text)  
+- `created_at`  
+
+#### 5. Payments
+
+- `id` (Primary Key)  
+- `booking_id` (Foreign Key → Bookings)  
+- `amount` (Total payment made)  
+- `payment_method` (Card, Bank Transfer, PayPal, etc.)  
+- `status` (Paid, Failed, Refunded)  
+- `created_at`  
+
+---
+
+### Relationships
+
+- A **User** can list multiple **Properties**.  
+- A **User** can make multiple **Bookings**.  
+- A **Property** can have many **Bookings**.  
+- A **Property** can have multiple **Reviews** (from different users).  
+- A **Booking** is linked to one **Payment**, but a payment belongs to one booking.  
+- A **User** can write multiple **Reviews**, each linked to a property.  
+
+---
+
+This relational design ensures data consistency, integrity, and efficiency in handling core operations like reservations, payments, and reviews.
+
+

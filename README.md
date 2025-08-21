@@ -23,7 +23,7 @@ The goal is to provide hands-on experience in building scalable applications and
 - **Containerization**: Docker  
 - **CI/CD**: GitHub Actions (or equivalent)  
 - **Version Control**: Git & GitHub  
-- **Design Tools:** Figma for UI/UX design
+- **Design Tools:** Figma for UI/UX Design Planning
 
 ---
 

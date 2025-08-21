@@ -85,7 +85,7 @@ airbnb-clone-project/
 
 ---
 
-### 💡 Importance of User-Friendly Design
+### Importance of User-Friendly Design
 
 A **user-friendly booking system** reduces friction in the customer journey, improves conversion rates, and increases trust. Clear navigation, responsive layouts, and intuitive interfaces make it easier for users to find listings, view details, and complete bookings with confidence.  
 Good design also ensures accessibility, allowing more people to successfully use the platform across different devices and networks.  
@@ -152,7 +152,7 @@ Good design also ensures accessibility, allowing more people to successfully use
 
 ---
 
-## 🧩 UI Component Patterns
+## UI Component Patterns
 
 To ensure **consistency, reusability, and scalability**, the following UI components will be created and used throughout the application:
 

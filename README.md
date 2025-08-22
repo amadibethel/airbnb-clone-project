@@ -18,6 +18,8 @@ The project covers **frontend development, backend APIs, database design, and de
 
 ---
 
+## Technology Stack
+
 ## Tech Stack
 
 - **Frontend:** HTML, CSS, JavaScript (React or similar framework)  
@@ -177,4 +179,127 @@ To ensure **consistency, reusability, and scalability**, the following UI compon
 - Includes social media links and copyright notice  
 
 ---
+
+## Database Design
+
+We will use PostgreSQL as the primary relational database for this project.
+
+### Entities
+
+- **Users**: Stores user profile information (name, email, password, role).
+- **Properties**: Represents listed properties (title, description, price, location, host_id).
+- **Bookings**: Stores reservation details (user_id, property_id, dates, status).
+- **Reviews**: Contains user feedback on properties (user_id, property_id, rating, comment).
+- **Payments**: Records transaction details for bookings.
+
+### Relationships
+
+- A **User** can list multiple **Properties**.
+- A **User** can book multiple **Properties** through **Bookings**.
+- A **User** can leave multiple **Reviews** for different **Properties**.
+- Each **Booking** is linked to one **Payment**.
+
+### ERD (Entity Relationship Diagram)
+
+(Here you can add a diagram later using tools like dbdiagram.io or Lucidchart.)
+
+## Feature Breakdown
+
+The AirBnB Clone project will include the following key features:
+
+1. **User Authentication**
+
+   - Sign up, login, and logout functionality
+   - Secure password hashing
+   - Role-based access (hosts and guests)
+
+2. **Property Listings**
+
+   - Hosts can create, update, and delete property listings
+   - Property details include images, price, location, and amenities
+   - Search and filter properties by location, price, and availability
+
+3. **Bookings**
+
+   - Guests can book available properties
+   - Calendar integration for availability
+   - Booking management (create, view, cancel)
+
+4. **Payments**
+
+   - Secure payment processing for reservations
+   - Integration with third-party payment gateways
+
+5. **Reviews & Ratings**
+
+   - Guests can leave reviews and rate properties
+   - Display average ratings on property cards
+
+6. **UI Components**
+
+   - Reusable design elements such as Navbar, Property Card, and Footer
+   - Mobile-friendly responsive layout
+
+7. **Database Design**
+
+   - Relational database schema for users, properties, bookings, reviews, and payments
+
+## API Security
+
+To ensure the security of the AirBnB Clone API, we will implement the following measures:
+
+- **Authentication & Authorization**
+ 
+  - Use JWT (JSON Web Tokens) for user authentication.  
+  - Role-based access control to restrict endpoints (e.g., admin vs. user).  
+
+- **Data Validation & Sanitization**
+
+  - Validate incoming requests to prevent SQL injection, XSS, and CSRF attacks.  
+  - Sanitize user input to maintain data integrity.  
+
+- **Secure Communication**
+ 
+  - Enforce HTTPS for all API requests.  
+  - Use TLS encryption for sensitive data transmission.  
+
+- **Rate Limiting & Throttling**
+  
+  - Implement rate limiting to prevent brute-force attacks.  
+  - Throttle API requests per user to reduce abuse.  
+
+- **Error Handling & Logging**
+ 
+  - Avoid exposing stack traces or sensitive info in error messages.  
+  - Log failed authentication attempts for monitoring.  
+
+- **Dependency & Patch Management**
+
+  - Keep all frameworks, libraries, and dependencies up to date.  
+  - Regularly patch vulnerabilities.  
+
+These measures will help ensure that the application remains secure, scalable, and reliable for users.
+
+## CI/CD Pipeline
+
+We will implement a Continuous Integration and Continuous Deployment (CI/CD) pipeline to streamline development and ensure code quality.  
+
+- **Continuous Integration (CI):**  
+
+  Every push or pull request to the repository will trigger automated checks including linting, unit tests, and build verification.
+
+- **Continuous Deployment (CD):**  
+
+  Once changes are merged into the main branch, the application will automatically deploy to the staging environment.  
+  Production deployments will be triggered manually after approval.
+
+- **Tools & Services:**  
+
+  - GitHub Actions (for CI/CD workflows)  
+  - Docker (for containerized builds)  
+  - Vercel/Netlify (Frontend Deployment)  
+  - Render/Heroku/AWS (Backend Deployment)
+
+This pipeline ensures faster feedback, fewer bugs, and a smoother release cycle.
+
 

@@ -94,6 +94,8 @@ Good design also ensures accessibility, allowing more people to successfully use
 
 ## Project Roles and Responsibilities
 
+### Team Roles
+
 ### **Project Manager**
 
 - Oversees the project timeline and deliverables  
